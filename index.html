@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/e6ea8d3eb8.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body class="body-container">
+    <header class="header">
+        <div><img src="img/header/cam.jpg" alt=""></div>
+        <div><h1>Mis Fotos</h1></div>
+        <div><img src="img/header/cam.jpg" alt=""></div>
+    </header>
+
+    <nav class="navbar">
+        <div class="menu-grid-container">
+            <!-- <div class="menu-grid-item"><a href="animacion.html">ANIMACION</a></div> -->
+            <div class="menu-grid-item"><a href="vinilos.html">VINILOS</a></div>
+            <div class="menu-grid-item"><a href="viajes.html">VIAJES</a></div>
+            <div class="menu-grid-item"><a href="recitales.html">RECITALES</a></div>
+            <div class="menu-grid-item"><a href="riverplate.html">RIVER PLATE</a></div>
+        </div>
+    </nav>
+    
+    <main class="main">
+        <h2>Hola mundo!: Hace un par de años que vengo con ganas de hacer un curso de desarrollo web. Este año llego a mi Instagram una publicidad de Codo a Codo donde me llevaba a un sitio para poder realizar una preinscripción. Complete el formulario y quede seleccionado. Esta página web es parte del Trabajo Practico Obligatorio, creo que tiene muchas cosas por mejorar pero es parte del ingreso a este mundo web. Comparto algunas fotos que fui tomando durante los ultimos años. Espero les guste.</h2>
+    </main>
+
+
+
+    <aside class="sidebar">
+
+        <h3>Contacto</h3>
+        <h6>Complete el siguiente formulario para recibir información sobre las nuevas publicaciones. Seleccione la sección que mas le gusto.</h6>
+
+        <form id="miForm" action="https://formspree.io/f/xknedwyv" method="post">
+            <input class="largoboxform" type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" ><br>
+            <input class="largoboxform" type="text" name="apellido" id="apellido" placeholder="Escriba su apellido"><br>
+            <input class="largoboxform" type="text" name="email" id="email" placeholder="Escriba su email" ><br>
+            <select class="largoboxform" name="seccioninteres" id="">
+                <option value="seleccion: vinilos">Vinilos</option>
+                <option value="seleccion: viajes">Viajes</option>
+                <option value="seleccion: recitales">Recitales</option>
+                <option value="seleccion: river plate">River Plate</option>
+                <option value="seleccion: ninguna">Ninguna</option>
+            </select><br>
+            <label for="">
+                <textarea name="comentario" id="" cols="21" rows="5" placeholder="Deje algun comentario"></textarea>
+            </label><br>
+
+            <!-- ver como trabajar y limpiar casillas de seleccion y de comentario -->
+
+            <button class="largoboton" type="reset" onclick="clearData()">Restablecer</button>
+            <button class="largoboton" type="submit" onclick="getData()">Enviar</button>
+            
+            
+        </form>
+
+    </aside>
+    <footer class="footer">
+        <div class="footercontainer">
+            <div class="footeritem">
+                <h5>Redes sociales:</h5>
+                <a href="https://www.instagram.com/programacodoacodo/?hl=es"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="mailto:io.codoacodo@bue.edu.ar"><i class="fa-solid fa-envelope fa-2x"></i></a>
+                <a href="https://www.facebook.com/codoacodooficial/"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                
+            </div>
+            
+            <div class="footeritem"><a href="https://www.buenosaires.gob.ar/educacion/codo-codo"><img src="img/logo-CAC.webp" alt=""></a></div>
+
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
